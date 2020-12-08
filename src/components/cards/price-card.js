@@ -44,7 +44,7 @@ const PriceCard = ({ price }) => {
             Starting from
           </Text>
           <Text as="span" className="price-value">
-            {price?.amount?.toFixed(2)}
+            M {price?.amount?.toFixed(2)}
             /mo
           </Text>
         </Box>
@@ -61,7 +61,7 @@ export default PriceCard;
 
 const styles = {
   priceTable: {
-    backgroundColor: '#020718',
+    backgroundColor: '#0091AD',
     border: `1px solid ${rgba('#F3F4F5', 0.15)}`,
     color: '#fff',
     borderRadius: 10,

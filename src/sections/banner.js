@@ -9,23 +9,43 @@ import mapMarker from 'assets/images/icons/map-marker.png';
 const options = [
   {
     id: 1,
-    label: 'Brooklyn, New york',
-    value: 'Brooklyn, New york',
+    label: 'Co-working ',
+    value: 'cospace',
   },
   {
     id: 2,
-    label: 'Atlanta, Georgia',
+    label: 'Dedicated Office ',
     value: 'Atlanta, Georgia',
   },
   {
     id: 3,
-    label: 'Minneapolis, Minnesota',
-    value: 'Minneapolis, Minnesota',
+    label: 'Land',
+    value: 'Leribe',
   },
   {
     id: 4,
-    label: 'Chicago, Illinois',
-    value: 'Chicago, Illinois',
+    label: 'Industrial',
+    value: 'TY',
+  },
+  {
+    id: 5,
+    label: 'Residential',
+    value: 'TY',
+  },
+  {
+    id: 6,
+    label: 'Retail',
+    value: 'TY',
+  },
+  {
+    id: 7,
+    label: 'Lodging',
+    value: 'TY',
+  },
+  {
+    id: 7,
+    label: 'Venues and Halls',
+    value: 'TY',
   },
 ];
 
@@ -41,17 +61,16 @@ export default function Banner() {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
             <Heading as="h1" sx={styles.heroTitle}>
-              Coworking space that will feel like home.
+              Welcome to the Real Estate universe.
             </Heading>
             <Text as="p" sx={styles.desc}>
-              Whether you’re an established enterprise or a growing startup,
-              discover spaces that inspire which will best your most impactful
-              work.
+              Whether you’re an established enterprise or a growing startup, a single young adult or an expat family
+              discover spaces that will inspire you.
             </Text>
             <Box as="form" onSubmit={handleSubmit}>
               <Select
                 id="location"
-                label="Find workplace"
+                label="Searc"
                 defaultValue={options[1].label}
                 sx={styles.select}
                 icon={mapMarker}
@@ -63,7 +82,7 @@ export default function Banner() {
                 ))}
               </Select>
               <Button type="submit" sx={styles.button} variant="primary">
-                Subscribe
+                Search
               </Button>
             </Box>
           </Box>

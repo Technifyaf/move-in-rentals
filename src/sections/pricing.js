@@ -14,58 +14,58 @@ const monthlyPricing = [
   {
     id: 1,
     icon: userIcon,
-    title: 'Starter Pack',
-    amount: 49.99,
+    title: 'Standard pack',
+    amount: 149.99,
     isRecommended: false,
     features: [
       {
         id: 1,
         isAvailable: true,
-        title: 'Ultimate access to all course, exercises and assessments',
+        title: 'Search discovery and online booking notifications ',
       },
       {
         id: 2,
         isAvailable: true,
-        title: `Free access for all kind of exercise corrections with downloads.`,
+        title: `7 day trial, no credit card details required`,
       },
       {
         id: 3,
         isAvailable: true,
-        title: `Total assessment corrections with free download access system`,
+        title: `Weekly audience reach and click rate report`,
       },
       {
         id: 4,
         isAvailable: false,
-        title: `Unlimited download of courses on the mobile app contents`,
+        title: `Social media spotlight and reach analatytics`,
       },
     ],
   },
   {
     id: 2,
     icon: userIcon2,
-    title: 'Family Pack',
-    amount: 89.99,
+    title: 'Premium Pack',
+    amount: 319.99,
     isRecommended: true,
     features: [
       {
         id: 1,
         isAvailable: true,
-        title: 'Ultimate access to all course, exercises and assessments',
+        title: 'Every feauture in available in the basic package',
       },
       {
         id: 2,
         isAvailable: true,
-        title: `Free access for all kind of exercise corrections with downloads.`,
+        title: `Social media spotlight and real time analytics.`,
       },
       {
         id: 3,
         isAvailable: true,
-        title: `Total assessment corrections with free download access system`,
+        title: `Video walkthrough of the space for potential tenants. `,
       },
       {
         id: 4,
         isAvailable: true,
-        title: `Unlimited download of courses on the mobile app contents`,
+        title: `Monthly newsletter placement to our list of subscribers`,
       },
     ],
   },
@@ -80,24 +80,24 @@ const annualPricing = [
     isRecommended: false,
     features: [
       {
-        id: 2,
-        isAvailable: true,
-        title: `Free access for all kind of exercise corrections with downloads.`,
-      },
-      {
         id: 1,
         isAvailable: true,
-        title: 'Ultimate access to all course, exercises and assessments',
+        title: 'Search discovery and online booking notifications ',
+      },
+      {
+        id: 2,
+        isAvailable: true,
+        title: `7 day trial, no credit card details required`,
       },
       {
         id: 3,
         isAvailable: true,
-        title: `Total assessment corrections with free download access system`,
+        title: `Weekly audience reach and click rate report`,
       },
       {
         id: 4,
         isAvailable: false,
-        title: `Unlimited download of courses on the mobile app contents`,
+        title: `Social media spotlight and reach analatytics`,
       },
     ],
   },
@@ -212,7 +212,7 @@ const fadeIn2 = keyframes`
 
 const styles = {
   section: {
-    backgroundColor: '#020718',
+    backgroundColor: '#0091AD',
     pt: [60],
     pb: [100, 100, 100, 80],
   },

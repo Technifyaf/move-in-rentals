@@ -55,7 +55,7 @@ export default function Header() {
                   ))}
                 </Box>
                 <Button sx={styles.joinNow} variant="primaryMd">
-                  Join us now
+                List property
                 </Button>
               </Flex>
 

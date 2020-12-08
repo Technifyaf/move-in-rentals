@@ -3,26 +3,26 @@ import { jsx, Box, Button, Container, Image } from 'theme-ui';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';
 import SectionHeading from 'components/section-heading';
-import uber from 'assets/images/clients/uber.png';
-import google from 'assets/images/clients/google.png';
-import paypal from 'assets/images/clients/paypal.png';
+import pionner_mall from 'assets/images/clients/pioneer.png';
+import maseru_mall from 'assets/images/clients/maserumall.jpg';
+import laa from 'assets/images/clients/LAA.jpg';
 import microsoft from 'assets/images/clients/microsoft.png';
 import dribbble from 'assets/images/clients/dribbble.png';
 const clients = [
   {
     id: 1,
-    name: 'uber',
-    logo: uber,
+    name: 'Pioneer',
+    logo: pionner_mall,
   },
   {
     id: 2,
-    name: 'Google',
-    logo: google,
+    name: 'Maseru Mall',
+    logo: maseru_mall,
   },
   {
     id: 3,
-    name: 'PayPal',
-    logo: paypal,
+    name: 'LAA',
+    logo: laa,
   },
   {
     id: 4,
@@ -102,7 +102,7 @@ const Clients = () => {
         <Slider sx={styles.clients} {...settings}>
           {clients?.map((client) => (
             <Box key={client.id} as="figure" sx={styles.logo}>
-              <Image loading="lazy" src={client.logo} alt={client.name} />
+              <Image loading="lazy" src={client.logo} width="150" alt={client.name} />
             </Box>
           ))}
         </Slider>

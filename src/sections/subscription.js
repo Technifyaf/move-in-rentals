@@ -34,7 +34,7 @@ export default Subscription;
 
 const styles = {
   section: {
-    backgroundColor: '#020718',
+    backgroundColor: '#0091AD',
     pt: '60px',
     pb: '70px',
   },

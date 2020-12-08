@@ -7,7 +7,7 @@ import { rgba } from 'polished';
 const navItems = [
   {
     id: 1,
-    link: '#!',
+    link: '#',
     title: 'Home',
   },
   {
@@ -59,7 +59,7 @@ export default function Footer() {
 
 const styles = {
   footer: {
-    backgroundColor: '#020718',
+    backgroundColor: '#0091AD',
   },
   content: {
     alignItems: 'center',

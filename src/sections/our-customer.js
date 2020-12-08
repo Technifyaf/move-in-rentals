@@ -15,8 +15,8 @@ const OurCustomer = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="We have more than thousand of worldwide happy customer."
-              description="Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities."
+              title="We have more than 100K visitors per month."
+              description="From aspiring entreprenurs, matriculants, newly weds, first time parents, expanding retailers, expats, estabilished businesses and growing startups "
             />
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
               <Link variant="links.learnMore" sx={styles.link} href="#!">
