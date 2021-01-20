@@ -19,13 +19,14 @@ export default function IndexPage() {
         <SEO title="Movein rentals" />
         <Banner />
         <Clients />
-        <FeaturedSpace />
-        <Gallery />
-        <Pricing />
-        <OurCustomer />
-        <Blog />
-        <Subscription />
+    
       </Layout>
     </ThemeProvider>
   );
 }
+
+///  <Pricing />
+// <Gallery />
+///    <FeaturedSpace />      
+//<OurCustomer />
+//<Subscription />
