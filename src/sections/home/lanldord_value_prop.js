@@ -1,12 +1,12 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Flex, Link } from 'theme-ui';
+import { jsx, Box, Button,Container, Image, Flex, Link } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import customer from 'assets/images/how-it-works.png';
+import customer from 'assets/images/how-it-works-2.png';
 
-const OurCustomer = () => {
+const OurLandlord = () => {
   return (
-    <Box as="section" sx={styles.section}>
+    <Box as="section" sx={styles.section} id ="landlord">
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
@@ -20,7 +20,7 @@ const OurCustomer = () => {
             />
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
               <Link variant="links.learnMore" sx={styles.link} href="#!">
-                Learn more <RiArrowRightSLine size="20px" />
+               <Button > Get started</Button> 
               </Link>
             </Box>
           </Box>
@@ -30,7 +30,7 @@ const OurCustomer = () => {
   );
 };
 
-export default OurCustomer;
+export default OurLandlord;
 
 const styles = {
   section: {

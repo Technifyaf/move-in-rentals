@@ -1,26 +1,15 @@
 export default [
   {
-    path: 'home',
-    label: 'Home',
-  },
-  {
-    path: 'clients',
-    label: 'Clients',
+    path: 'landlord',
+    label: 'Landlords',
   },
   {
     path: 'feature',
-    label: 'Feature',
+    label: 'Use cases',
   },
   {
-    path: 'gallery',
-    label: 'Gallery',
+    path: 'tenants',
+    label: 'Tenants',
   },
-  {
-    path: 'pricing',
-    label: 'Pricing',
-  },
-  {
-    path: 'blog',
-    label: 'Blog',
-  },
+
 ];

@@ -68,8 +68,11 @@ const Searchresults = () => {
           slogan="Hi there "
           title="We are currently building the site. Sign up for our newsletter to stay in the loop"
         />
-        <a href='https://us10.list-manage.com/contact-form?u=808c788c96e899a4b2e290393&form_id=c7a014178c47fcf2194d7283cca1b984'  >
-		<Button sx={styles.button} variant='primary'>
+        <a 
+        href='https://us10.list-manage.com/contact-form?u=808c788c96e899a4b2e290393&form_id=c7a014178c47fcf2194d7283cca1b984'  
+        sx ={styles.link}
+        >
+		<Button sx={styles.button} >
 								Contact us
 		</Button>
 		</a>
@@ -104,6 +107,9 @@ const styles = {
       'repeat(3, 1fr)',
     ],
     m: [0, 0, 0, '0 -15px', 0],
+  },
+  link:{
+      textDecoration:'none'
   },
   button: {
     fontSize: 20,

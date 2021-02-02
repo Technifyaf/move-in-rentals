@@ -68,18 +68,7 @@ const data = {
       title: 'Students',
       description: 'Looking for student accomodation',
     },
-    {
-      id: 8,
-      icon: factory,
-      title: 'Manufacturer ',
-      description: 'Manufacturer looking for a industrial size space.',
-    },
-    {
-      id: 9,
-      icon: young_fam,
-      title: 'Young family ',
-      description: 'Manufacturer looking for a industrial size space.',
-    },
+    
   ],
   
 };
@@ -131,7 +120,7 @@ const FeaturedSpace = () => {
           <Box sx={styles.leftContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Who uses move-in ?"
+              title="Who uses our product?"
               description="Move in is used by diffrent people in diffrent phases of their life for different reasons."
             />
             <Box sx={styles.featureWrapper}>

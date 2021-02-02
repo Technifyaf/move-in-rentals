@@ -1,6 +1,9 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Heading, Text, Button, Link } from 'theme-ui';
 import { rgba } from 'polished';
+import React, { useState } from 'react';
+import { useRouter } from 'next/router'
+
 
 import Select from 'components/select';
 import bannerBg from 'assets/images/banner-bg.jpg';
@@ -9,56 +12,68 @@ import mapMarker from 'assets/images/icons/map-marker.png';
 const options = [
 	{
 		id: 1,
-		label: 'Co-working',
-		value: 'cospace',
+		label: 'Co-working space',
+		value: 'co-workingspace',
 	},
 	{
 		id: 2,
 		label: 'Exclusive Office ',
-		value: 'Atlanta, Georgia',
+		value: 'Exclusive Office',
 	},
 	{
 		id: 3,
 		label: 'Land',
-		value: 'Leribe',
+		value: 'Land',
 	},
 	{
 		id: 4,
 		label: 'Industrial',
-		value: 'TY',
+		value: 'Industrial',
 	},
 	{
 		id: 5,
 		label: 'Residential',
-		value: 'TY',
+		value: 'Residential',
 	},
 	{
 		id: 6,
 		label: 'Retail',
-		value: 'TY',
+		value: 'Retial',
 	},
 	{
 		id: 7,
 		label: 'Lodging',
-		value: 'TY',
-	},
-	{
-		id: 7,
-		label: 'Venues and Halls',
-		value: 'TY',
+		value: 'Loging',
 	},
 	{
 		id: 8,
+		label: 'Venues and Halls',
+		value: 'Venues and Halls',
+	},
+	{
+		id: 9,
 		label: 'Other',
-		value: 'TY',
+		value: 'other',
 	},
 ];
 
 export default function Banner() {
+
+	const [type_value, setValue] = useState("Co-workingspace");
+	const router = useRouter()
+
+	const onChange = (event) => {
+		setValue(event.target.value);
+	  };
+
 	const handleSubmit = (e) => {
+		
 		e.preventDefault();
-		console.log('submitting...');
-		alert('man');
+		console.log(type_value)
+		router.push({pathname: '/search',
+		search: 'type='+type_value})
+	//	alert(type_value)
+	   
 	};
 
 	return (
@@ -79,6 +94,7 @@ export default function Banner() {
 								defaultValue={options[1].label}
 								sx={styles.select}
 								icon={mapMarker}
+								onChange={onChange}
 							>
 								{options?.map((option) => (
 									<option value={option.value} key={option.id}>
@@ -86,12 +102,12 @@ export default function Banner() {
 									</option>
 								))}
 							</Select>
-							<Link href='/search'  >
+						
 								<Button sx={styles.button} variant='primary'>
-							
-								</Button>
 								Search
-							</Link>
+								</Button>
+							
+						
 						</Box>
 					</Box>
 				</Box>
@@ -172,4 +188,15 @@ const styles = {
 			outline: '0 none',
 		},
 	},
+	link: {
+		textDecoration : 'none',
+		svg: {
+		  transition: 'margin-left 0.3s ease-in-out 0s',
+		},
+		':hover': {
+		  svg: {
+			ml: '5px',
+		  },
+		},
+	  },
 };

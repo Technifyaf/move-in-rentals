@@ -55,11 +55,11 @@ export default function Header() {
                     </li>
                   ))}
                 </Box>
-                <Link>
+               <a href = "https://forms.gle/a6QdFq4fbsHfmyDm9" sx = {styles.link}>
                 <Button sx={styles.joinNow} variant="primaryMd">
                 List property
                 </Button>
-                </Link>
+               </a>
               </Flex>
 
               {mobileMenu ? (
@@ -165,4 +165,8 @@ const styles = {
     width: '32px',
     ml: '3px',
   },
+
+  link:{
+      textDecoration : 'none'
+  }
 };
