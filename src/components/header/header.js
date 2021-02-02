@@ -6,6 +6,7 @@ import Sticky from 'react-stickynode';
 import Logo from 'components/logo';
 import { NavLink } from 'components/link';
 import menuItems from './header.data';
+import { Link } from 'react-scroll';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -54,9 +55,11 @@ export default function Header() {
                     </li>
                   ))}
                 </Box>
+                <Link>
                 <Button sx={styles.joinNow} variant="primaryMd">
                 List property
                 </Button>
+                </Link>
               </Flex>
 
               {mobileMenu ? (

@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import customer from 'assets/images/customer.png';
+import customer from 'assets/images/how-it-works.png';
 
 const OurCustomer = () => {
   return (
@@ -15,8 +15,8 @@ const OurCustomer = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="We have more than 100K visitors per month."
-              description="From aspiring entreprenurs, matriculants, newly weds, first time parents, expanding retailers, expats, estabilished businesses and growing startups "
+              title="Simplify landlording"
+              description=" Find tenants easier, keep track of leads , close deals quicker."
             />
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
               <Link variant="links.learnMore" sx={styles.link} href="#!">

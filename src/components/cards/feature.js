@@ -6,7 +6,7 @@ import { jsx, Box, Heading, Text } from 'theme-ui';
 const Feature = ({ data: feature }) => {
   return (
     <Box key={feature.id} sx={styles.featureItem}>
-      <Image loading="lazy" src={feature.icon} alt={feature.title} />
+      <Image loading="lazy" src={feature.icon} alt={feature.title} width ="" />
       <Heading as="h3">{feature.title}</Heading>
       <Text as="p">{feature.description}</Text>
     </Box>

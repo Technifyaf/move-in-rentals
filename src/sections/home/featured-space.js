@@ -9,9 +9,16 @@ import Image from 'components/image';
 import expand from 'assets/images/icons/expand.png';
 import users from 'assets/images/icons/users.png';
 import wifi from 'assets/images/icons/wifi.png';
-import slider1 from 'assets/images/features/1.png';
-import slider2 from 'assets/images/features/2.webp';
-import slider3 from 'assets/images/features/3.png';
+import student from 'assets/images/features/student_accomodation2.png';
+import couple from 'assets/images/features/couple2.png';
+import shop_owner from 'assets/images/features/shop_owner.png';
+import professional from 'assets/images/features/office_space.png';
+import coworking from 'assets/images/features/co-working.png';
+import young_fam from 'assets/images/features/young_family.png';
+import bachelor from 'assets/images/features/bachelors.png';
+import factory from 'assets/images/features/factory.png';
+
+
 
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
 // Import Swiper React components
@@ -23,43 +30,58 @@ const data = {
   feature: [
     {
       id: 1,
-      icon: expand,
-      title: '1000 ft2',
-      description: 'you will get 1000ft square space facility here.',
+      icon: shop_owner,
+      title: 'Shop owner',
+      description: 'Shop owner looking to set up new shop',
     },
     {
       id: 2,
-      icon: users,
-      title: '80 Members',
-      description: 'you will get advantage to live 80+ member here.',
+      icon: professional,
+      title: 'Professional',
+      description: 'Growing professional looking for office space',
     },
     {
       id: 3,
-      icon: wifi,
-      title: '100 mbps',
-      description: 'Internet speed is much better than others.',
+      icon: coworking,
+      title: 'Freelancers',
+      description: 'Freelancers looking for co-working space',
+    },
+    
+    {
+      id: 4,
+      icon: couple,
+      title: 'Couples',
+      description: 'Looking for single family homes',
+    },
+    
+   
+   , {
+      id: 5,
+      icon: bachelor,
+      title: 'Bacherlor',
+      description: 'Looking for a bachelor pad',
+    },
+  
+    {
+      id: 7,
+      icon: student,
+      title: 'Students',
+      description: 'Looking for student accomodation',
+    },
+    {
+      id: 8,
+      icon: factory,
+      title: 'Manufacturer ',
+      description: 'Manufacturer looking for a industrial size space.',
+    },
+    {
+      id: 9,
+      icon: young_fam,
+      title: 'Young family ',
+      description: 'Manufacturer looking for a industrial size space.',
     },
   ],
-  gallery: [
-    {
-      id: 1,
-      image: slider1,
-      title: 'Kin Co-working Space',
-      desc: '442 Broadway, New York',
-    },
-    {
-      id: 2,
-      image: slider2,
-      title: 'Kin Co-working Space',
-      desc: '212 Broadway, Jamaica',
-    },
-    {
-      id: 3,
-      image: slider3,
-      title: 'Kin Co-working Space',
-      desc: '212 Broadway, Houston',
-    },
-  ],
+  
 };
 
 const FeaturedSpace = () => {
@@ -68,7 +90,7 @@ const FeaturedSpace = () => {
   const [togglePlay, setTogglePlay] = useState(false);
   const [currentWidth, setCurrentWidth] = useState(0);
 
-  let time = 3;
+  let time = 5;
   let tick, percentTime;
 
   function startProgressbar() {
@@ -109,8 +131,8 @@ const FeaturedSpace = () => {
           <Box sx={styles.leftContent}>
             <SectionHeading
               sx={styles.heading}
-              title="One of best co-working space in Kenya"
-              description="Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities."
+              title="Who uses move-in ?"
+              description="Move in is used by diffrent people in diffrent phases of their life for different reasons."
             />
             <Box sx={styles.featureWrapper}>
               {data?.feature?.map((feature) => (
@@ -118,36 +140,7 @@ const FeaturedSpace = () => {
               ))}
             </Box>
           </Box>
-          <Box sx={styles.rightContent}>
-            <Progressbar
-              sx={styles.progressbar}
-              togglePlay={togglePlay}
-              handleClick={handleToggle}
-              currentWidth={currentWidth}
-            />
-            <Swiper
-              loop={true}
-              effect="fade"
-              ref={swiperRef}
-              spaceBetween={0}
-              slidesPerView={1}
-              pagination={true}
-            >
-              {data?.gallery?.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <Box as="figure" sx={styles.image}>
-                    <Image loading="lazy" src={item.image} alt="" />
-                    <Box as="figcaption">
-                      <Box>
-                        <Heading as="h4">{item.title}</Heading>
-                        <Text as="p">{item.desc}</Text>
-                      </Box>
-                    </Box>
-                  </Box>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </Box>
+        
         </Box>
       </Container>
     </Box>
@@ -166,7 +159,7 @@ const styles = {
     display: ['flex', null, null, null, 'grid'],
     alignItems: 'center',
     flexDirection: ['column', null, null, null, null],
-    gridTemplateColumns: ['unset', null, null, null, 'repeat(2,1fr)'],
+    gridTemplateColumns: ['unset', null, null, null, 'repeat(1,1fr)'],
   },
   leftContent: {
     m: [0, '30px 0px 0', '30px 50px 0', 0],

@@ -47,6 +47,11 @@ const options = [
 		label: 'Venues and Halls',
 		value: 'TY',
 	},
+	{
+		id: 8,
+		label: 'Other',
+		value: 'TY',
+	},
 ];
 
 export default function Banner() {
@@ -81,10 +86,12 @@ export default function Banner() {
 									</option>
 								))}
 							</Select>
-
-							<Button type='submit' sx={styles.button} variant='primary'>
+							<Link href='/search'  >
+								<Button sx={styles.button} variant='primary'>
+							
+								</Button>
 								Search
-							</Button>
+							</Link>
 						</Box>
 					</Box>
 				</Box>

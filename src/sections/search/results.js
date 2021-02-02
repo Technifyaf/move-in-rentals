@@ -8,29 +8,11 @@ import BlogPost from 'components/cards/blog-card';
 import thumb1 from 'assets/images/blog/1.png';
 import thumb2 from 'assets/images/blog/2.png';
 import thumb3 from 'assets/images/blog/3.png';
+import { Link } from 'react-scroll';
 
 const data = [
-  {
-    id: 1,
-    thumb: thumb1,
-    commentCount: 22,
-    link: '#!',
-    title: `How to work with prototype design with adobe xd featuring tools`,
-  },
-  {
-    id: 2,
-    thumb: thumb2,
-    commentCount: 15,
-    link: '#!',
-    title: `Create multiple artboard by using figma prototyping development`,
-  },
-  {
-    id: 3,
-    thumb: thumb3,
-    commentCount: 18,
-    link: '#!',
-    title: `Convert your web layout theming easily with sketch zeplin extension`,
-  },
+  
+
 ];
 
 function SlickArrow({ className, onClick, control }) {
@@ -76,15 +58,21 @@ const settings = {
   ],
 };
 
-const Blog = () => {
+const Searchresults = () => {
   return (
+
     <Box id="blog" as="section" sx={styles.section}>
       <Container>
         <SectionHeading
           sx={styles.heading}
-          slogan="Blog Post"
-          title="Popular blog post we update everyday"
+          slogan="Hi there "
+          title="We are currently building the site. Sign up for our newsletter to stay in the loop"
         />
+        <a href='https://us10.list-manage.com/contact-form?u=808c788c96e899a4b2e290393&form_id=c7a014178c47fcf2194d7283cca1b984'  >
+		<Button sx={styles.button} variant='primary'>
+								Contact us
+		</Button>
+		</a>
         <Slider sx={styles.blogWrapper} {...settings}>
           {data?.map((post) => (
             <BlogPost key={post.id} post={post} />
@@ -95,7 +83,7 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Searchresults;
 
 const styles = {
   section: {
@@ -117,6 +105,20 @@ const styles = {
     ],
     m: [0, 0, 0, '0 -15px', 0],
   },
+  button: {
+    fontSize: 20,
+    fontWeight: 700,
+    marginTop: 20,
+    width: '100%',
+    minHeight: [50, null, null, null, 60],
+    fontSize: [16, 16, 16, 20],
+    ':focus': {
+        outline: '0 none',
+    },
+    
+}
+
+,
   paginationButton: {
     minHeight: '30px',
     padding: 0,
