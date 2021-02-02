@@ -10,7 +10,7 @@ export default function SearchPage() {
   return (
     <ThemeProvider theme={theme}>
      
-        <SEO title="Search" />
+        <SEO title="Search results" />
         <Searchresults/>
      
   
